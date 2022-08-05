@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 7: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
+// 456 -> 6
+// 782 -> 2
+// 918 -> 8
+
+Console.Write("Введите целое трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.Write($"Последняя цифра числа {number} это -> ");
+int lastdigit = number % 10;
+if (lastdigit < 0) //чтобы корректно работало с отрицательными числами, избавляемся от знака "-" (иначе в ответе отрицательное число, а нам нужна последняя цифра)
+{
+    lastdigit = lastdigit * -1;
+}
+Console.Write(lastdigit);
