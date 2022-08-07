@@ -12,10 +12,6 @@ while (even <= number)
     if (even % 2 == 0)
     {
         Console.Write(even + " ");
-        even = even + 1;
     }
-    else
-    {
         even = even + 1;
-    }
 }
