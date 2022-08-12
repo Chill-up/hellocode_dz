@@ -22,7 +22,6 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("z2: ");
 int z2 = Convert.ToInt32(Console.ReadLine());
 
-
 double result = Pifagor3D(x1, y1, z1, x2, y2, z2);
-//передаем введенные точки в созданный метод и округляем до 2 знаков как в примерах из учловия задачи.
-Console.WriteLine($"Расстояние между точками A({x1},{y1},{z1}) и В({x2},{y2},{z2}) = {Math.Round(result, 2)}"); 
+//передаем введенные точки в созданный метод и округляем до 2 знаков как в примерах из условия задачи.
+Console.WriteLine($"Расстояние между точками A({x1},{y1},{z1}) и В({x2},{y2},{z2}) = {Math.Round(result, 2)}");
