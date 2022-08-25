@@ -24,7 +24,7 @@ double[] CreateAndFillArrayRandomDouble(int size, int min, int max)
         // Random.NextDouble() * (maxValue - minValue) + minValue
 
         // и округляем его с точностью до 1 знака с помощью Math.Round.
-        array[i] = Math.Round((rnd.NextDouble() * ((max - min) + min)), 1);
+        array[i] = Math.Round((rnd.NextDouble() * (max - min) + min), 1);
     }
     return array;
 }
