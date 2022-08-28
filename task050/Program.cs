@@ -61,6 +61,6 @@ PrintMatrixInt(randomMatrix);
 
 int result = FindElementInMatrix(randomMatrix, findRow, findCol);
 
-if (result != -404) Console.WriteLine($"Элемент по адресу ({findRow},{findCol}) = {result}");
-else Console.WriteLine($"Элемент по адресу ({findRow},{findCol}) не найден");
+if (result != -404) Console.WriteLine($"Элемент по адресу строка {findRow}, столбец {findCol} = {result}");
+else Console.WriteLine($"Элемент по адресу строка {findRow}, столбец {findCol} отсутствует в массиве");
 
