@@ -6,10 +6,38 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
+void PrintMatrixDouble(double[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        Console.Write("[");
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],4} ");
+            else Console.Write($"{matrix[i, j],4}");
+        }
+        Console.WriteLine("]");
+    }
+}
 
+double[,] CreateMatrixRandomDouble(int row, int col)
+{
+    double[,] matrix = new double[row, col];
+    Random rnd = new Random();
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            matrix[i, j] = Math.Round((rnd.NextDouble() * 10), 1);
+        }
+    }
+    return matrix;
+}
 
 Console.WriteLine("Введите желаемое кол-во строк (число):");
-int row = Console.ReadLine();
+int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите желаемое кол-во столбцов (число):");
-int col = Console.ReadLine();
+int cols = Convert.ToInt32(Console.ReadLine());
 
+double[,] res = CreateMatrixRandomDouble(rows, cols);
+PrintMatrixDouble(res);
