@@ -13,8 +13,8 @@ void PrintMatrixDouble(double[,] matrix)
         Console.Write("[");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],4} ");
-            else Console.Write($"{matrix[i, j],4}");
+            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],5} ");
+            else Console.Write($"{matrix[i, j],5}");
         }
         Console.WriteLine("]");
     }
@@ -33,11 +33,12 @@ double[,] CreateMatrixRandomDouble(int row, int col)
     }
     return matrix;
 }
-
+Console.Clear();
 Console.WriteLine("Введите желаемое кол-во строк (число):");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите желаемое кол-во столбцов (число):");
 int cols = Convert.ToInt32(Console.ReadLine());
-
+Console.WriteLine();
 double[,] res = CreateMatrixRandomDouble(rows, cols);
+Console.WriteLine($"Сгенерирован массив {rows} x {cols} :\n");
 PrintMatrixDouble(res);
