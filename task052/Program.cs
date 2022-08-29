@@ -72,5 +72,5 @@ int[,] randomMatrix = CreateMatrixRandomInt(numberRows, numberCols, 0, 10); // �
 PrintMatrixInt(randomMatrix);
 
 double[] result = FindColumnsAverage(randomMatrix);
-Console.WriteLine("Среднее арифметическое всех чисел каждого стоблца:");
+Console.WriteLine("Среднее арифметическое всех чисел каждого столбца:");
 PrintArrayDouble(result);
