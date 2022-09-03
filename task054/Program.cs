@@ -8,13 +8,6 @@
 // 9 5 3 2
 // 8 4 4 2
 
-
-//     Console.WriteLine($"замена элемента {matrix[i, i]} на {matrix[i, i + 1]} ");
-//     int temp = matrix[i, i + 1]; //эта часть меняет элементы местами.
-//     matrix[i, i + 1] = matrix[i, i + 1];
-//     matrix[i, i + 1] = temp;
-// }
-
 void PrintMatrixInt(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
