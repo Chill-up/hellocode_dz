@@ -53,7 +53,7 @@ int[,] MatrixMultiply(int[,] matrixA, int[,] matrixB)
 }
 
 int numberRowsA = new Random().Next(2, 2);
-int numberRowsB = new Random().Next(2, 2);  // генерируем размер массива
+int numberRowsB = new Random().Next(2, 2);  // генерируем размер массива. Оставил только квадратные 2*2.
 int numberColsA = new Random().Next(2, 2);
 int numberColsB = new Random().Next(2, 2);
 
