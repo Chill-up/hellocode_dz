@@ -15,7 +15,6 @@ void NaturalNumberRowReverse(int n)
         Console.Write($"{n}, ");
         NaturalNumberRowReverse(n - 1);
     }
-
 }
 
 Console.Write($"N = {numberN} -> ");
